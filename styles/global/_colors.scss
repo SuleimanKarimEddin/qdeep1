@@ -1,0 +1,9 @@
+:root{
+    --primary:#1A1A1A;    
+    --secondary:  #FF3B30;    
+}
+:root:has(.dark){
+    --primary:#FFFFFF;    
+    --secondary:  #FF3B30;
+}
+

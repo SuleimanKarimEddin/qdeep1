@@ -1,0 +1,135 @@
+.footer{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+    &__first{
+        margin-top:150px ;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #1C1C1C;
+        border-radius: 10px;
+        padding: 30px;
+        height: 100%;
+        width: 70%;
+    
+        h1{
+            color: white;
+        }
+        h3{
+            color: #B3B3B3;
+            font-size: small;
+        }
+      
+    
+    }
+    &__first-text{
+        flex: 70%;
+    }
+    &__first-button{
+        flex: 30%;
+        @include Flex;
+        button{
+            max-width: 170px;
+            width: 100%;
+            height: 40px;
+            font-size: medium;
+            font-weight: bold;
+
+            background-color: var(--secondary);
+            border: none;
+            color: var(--primary);
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+    }
+    &__first-image{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 0;  
+        left: 0;      
+    }
+
+
+
+    &__second{
+        width: 100%;
+        margin-top: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+    }
+    &__logos{
+        display: flex;
+
+        justify-content: space-around;
+        align-items: center;
+        width: 20%;
+        height: 100%;
+    }
+    &__links{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        width: 30%;
+        margin-top: 80px;
+    }
+    &__link{
+        color: #E4E4E7;
+        text-decoration: none;
+        font-size: small;
+
+    }
+    &__br{
+        margin-top: 40px;
+        background-color: #262626;
+        width: 90%;
+        height: 1px;
+    }
+    &__info{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        margin-top: 40px;
+        color: #E4E4E7;
+        font-size: small;
+        & img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &__info-part{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 7px;
+    }
+    &__last{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 70px;
+        color: #B3B3B3;
+        font-size: small;
+        border: #262626 solid 1px;
+        border-radius: 40px;
+        width: 90%;
+        padding: 13px;
+
+        & img{
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+}
