@@ -65,7 +65,7 @@ export default function Page() {
     <Button icon={<UploadOutlined/>}>Upload</Button>
   </Upload>
   <Input onChange={(e) => settarget(e.target.value)} value={target} placeholder='Target Column'></Input>    
-  <Button disabled={isPending} onClick={onFinish}>{isPending ? <Spin style={{color:"white"}}/> : "Submit"}</Button>   
+  <Button disabled={isPending} onClick={onFinish}>{isPending ? <Spin tip="Uploading..."/> : "Submit"}</Button>   
    </div>
       </div>
     </>
