@@ -21,7 +21,7 @@ export default function Page() {
           data?.map((item: IFiles, idx: number) => (
             <div className="files__cart" key={idx}>
               <iframe
-                src={"https://cors-anywhere.herokuapp.com/http://31.128.35.50:8181" + item.url}
+                src={"http://31.128.35.50:8181" + item.url}
                 width={"100%"}
                 height="500px"
               ></iframe>
