@@ -1,11 +1,14 @@
 "use client";
 import NewsHolder from "@/componenets/news/NewsHolder";
 import Trusted from "@/componenets/trusted/Trusted";
+import Nav from "@/layout/navbar/Nav";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 export default function Home() {
   return (
     <>
+         <Nav></Nav>
       <div className="home">
         <h1 className="home-page">
           The quantum leap to solving the unsolvable{" "}
@@ -51,42 +54,7 @@ export default function Home() {
         </h3>
         <Trusted is_trusted={false}></Trusted>
       </div>
-      <div className="laptop">
-        <div className="laptop__first">
-          <button className="laptop__first-button">Coming Soon...</button>
-          <Image
-            src="/images/laptop/1.svg"
-            width={100}
-            height={100}
-            alt="logo"
-            className="laptop__first-image"
-          ></Image>
-          <Image
-            src="/images/laptop/first.svg"
-            width={100}
-            height={100}
-            alt="logo"
-            className="laptop__first-inner1"
-          ></Image>
-        </div>
-        <div className="laptop__second">
-          <button className="laptop__second-button">See Our Beta Platform</button>
-          <Image
-            src="/images/laptop/2.svg"
-            width={100}
-            height={100}
-            alt="logo"
-            className="laptop__second-image"
-          ></Image>
-          <Image
-            src="/images/laptop/second.svg"
-            width={100}
-            height={100}
-            alt="logo"
-            className="laptop__second-inner"
-          ></Image>
-        </div>
-      </div>
+     
       <div className="case">
         <h2 className="case__header">Our Featured Case Studies</h2>
         <h3 className="case__description">
@@ -165,6 +133,42 @@ export default function Home() {
             height={100}
             alt="logo"
             className="case__first-image"
+          ></Image>
+        </div>
+      </div>
+      <div className="laptop">
+        <div className="laptop__first">
+          <button className="laptop__first-button">Coming Soon...</button>
+          <Image
+            src="/images/laptop/1.svg"
+            width={100}
+            height={100}
+            alt="logo"
+            className="laptop__first-image"
+          ></Image>
+          <Image
+            src="/images/laptop/first.svg"
+            width={100}
+            height={100}
+            alt="logo"
+            className="laptop__first-inner1"
+          ></Image>
+        </div>
+        <div className="laptop__second">
+          <Link href={"/qfss"} className="laptop__second-button">See Our Beta Platform</Link>
+          <Image
+            src="/images/laptop/2.svg"
+            width={100}
+            height={100}
+            alt="logo"
+            className="laptop__second-image"
+          ></Image>
+          <Image
+            src="/images/laptop/second.svg"
+            width={100}
+            height={100}
+            alt="logo"
+            className="laptop__second-inner"
           ></Image>
         </div>
       </div>

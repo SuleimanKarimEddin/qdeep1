@@ -1,0 +1,10 @@
+.files{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 30px;
+    &__cart{
+        width: 33.33%;
+    }
+}
