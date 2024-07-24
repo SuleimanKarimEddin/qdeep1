@@ -10,7 +10,7 @@ export enum AxiosStatusEnum {
 }
 
 export enum AxiosEnum {
-  BASEURL = 'http://127.0.0.1:8181/api',
+  BASEURL = 'https://cors-anywhere.herokuapp.com/http://31.128.35.50:8181/api',
   IMAGE_BASE_URL = 'http://localhost:8000',
 
   HEADER_KEY = 'X-Custom-Query-Key',
