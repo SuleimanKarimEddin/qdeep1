@@ -76,10 +76,10 @@ export default function Home() {
               Quantum Congestion-Focused Traffic Optimization (Q-CFTO)
             </h2>
             <h3 className="case__first-body-subheader">
-              Building on Volkswagen and D-Wave's 2017 work, our Quantum
+              Building on Volkswagen and D-Wave&apos;s 2017 work, our Quantum
               Congestion-Focused Traffic Optimization (Q-CFTO) breaks down large
               traffic optimization problems into manageable subproblems. Using
-              D-Wave's Advantage Quantum Processing Unit with "Pegasus"
+              D-Wave&apos;s Advantage Quantum Processing Unit with &apos;Pegasus&apos;
               topology, we achieved faster, more effective traffic flow
               optimization.
             </h3>
@@ -90,7 +90,7 @@ export default function Home() {
             <h2 className="case__first-body-header">
             Passenger Drone Infrastructure Optimization (PDI-OP)
             </h2>
-            <h3 className="case__first-body-subheader">This case study addresses the optimization of urban passenger drone infrastructure. It focuses on the Passenger Drone Infrastructure Optimization Problem (PDI-OP), an NP-hard Facility Location Problem. Utilizing Quantum Annealing (QA), we achieved superior performance in determining spatial requirements for landing pads, vertiports, and vertistops. Our results demonstrate QA's potential to enhance urban mobility with optimized infrastructure deployment, despite challenges related to scalability and regulatory integration.
+            <h3 className="case__first-body-subheader">This case study addresses the optimization of urban passenger drone infrastructure. It focuses on the Passenger Drone Infrastructure Optimization Problem (PDI-OP), an NP-hard Facility Location Problem. Utilizing Quantum Annealing (QA), we achieved superior performance in determining spatial requirements for landing pads, vertiports, and vertistops. Our results demonstrate QA&apos;s potential to enhance urban mobility with optimized infrastructure deployment, despite challenges related to scalability and regulatory integration.
             </h3>
           </div>
           <Image
@@ -114,7 +114,7 @@ export default function Home() {
             Quantum Annealing for Robotics Inspection
             </h2>
             <h3 className="case__first-body-subheader">
-            This case study explores the integration of quantum annealing into robotics for inspecting electrical transmission lines. By transforming differential equations governing robot dynamics into Ising model Hamiltonians, we leveraged D-Wave's Advantage quantum annealer. Our results demonstrate enhanced computational efficiency and the viability of quantum annealing in solving complex robotics problems, paving the way for advanced applications in safe and efficient inspections.
+            This case study explores the integration of quantum annealing into robotics for inspecting electrical transmission lines. By transforming differential equations governing robot dynamics into Ising model Hamiltonians, we leveraged D-Wave&apos;s Advantage quantum annealer. Our results demonstrate enhanced computational efficiency and the viability of quantum annealing in solving complex robotics problems, paving the way for advanced applications in safe and efficient inspections.
             </h3>
           </div>
         </div>

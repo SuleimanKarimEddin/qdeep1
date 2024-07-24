@@ -7,7 +7,7 @@ import { Button } from 'antd'
 import { useRouter } from 'next/navigation'
 import React, { useEffect } from 'react'
 
-export default function page() {
+export default function Page() {
   const {mutate,data,isSuccess} = useAddPayments()
   const {isAuthenticated} =useAuthState()
   const {openModal} = useAuthModalStore()

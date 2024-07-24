@@ -8,7 +8,7 @@ interface IFiles {
   user_id: number;
   id: number;
 }
-export default function page() {
+export default function Page() {
   const { data } = useGetFiles();
   
   return (

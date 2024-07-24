@@ -6,7 +6,7 @@ import { UploadOutlined } from '@ant-design/icons';
 import { useUploadCsv } from "@/apis/auth";
 import useAuthState from "@/states/AuthState";
 import useAuthModalStore from "@/states/AuthModelStates";
-export default function page() {
+export default function Page() {
   const [target, settarget] = useState("")
   const [files, setfiles] = useState<File | null>(null)
   const {mutate,isPending} = useUploadCsv();

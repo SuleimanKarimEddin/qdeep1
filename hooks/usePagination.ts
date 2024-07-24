@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { PaginationAntd, PaginationMeta } from '../types/app';
 import { QueryPaginationEnum } from '../enums/TankStackQueryEnum';
 
@@ -8,7 +7,6 @@ interface Data {
 }
 
 const usePagination = (data: Data) => {
-  const navigate = useNavigate();
 
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -44,7 +42,6 @@ const usePagination = (data: Data) => {
   }, [data]);
 
   const handlePageChange = (page: number, pageSize: number) => {
-    navigate(`?page=${page}&per_page=${pageSize}`);
   };
 
   return { pagination, handlePageChange };
