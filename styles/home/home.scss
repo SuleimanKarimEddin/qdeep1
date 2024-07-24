@@ -81,14 +81,14 @@
     width: 178.66px;
     height: 164px;
     gap: 0px;
-    opacity: 0px;
+    z-index: 100;
   }
 
   &__cart-image2 {
     width: 100px;
     height: 100px;
     gap: 0px;
-    opacity: 0px;
+    z-index: 100;
   }
   &__title {
     font-size: 2rem;
