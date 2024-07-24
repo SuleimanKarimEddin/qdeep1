@@ -1,11 +1,14 @@
 "use client";
 import NewsHolder from "@/componenets/news/NewsHolder";
 import Trusted from "@/componenets/trusted/Trusted";
+import Nav from "@/layout/navbar/Nav";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 export default function Home() {
   return (
     <>
+         <Nav></Nav>
       <div className="home">
         <h1 className="home-page">
           The quantum leap to solving the unsolvable{" "}
@@ -51,42 +54,7 @@ export default function Home() {
         </h3>
         <Trusted is_trusted={false}></Trusted>
       </div>
-      <div className="laptop">
-        <div className="laptop__first">
-          <button className="laptop__first-button">Coming Soon...</button>
-          <Image
-            src="/images/laptop/1.svg"
-            width={100}
-            height={100}
-            alt="logo"
-            className="laptop__first-image"
-          ></Image>
-          <Image
-            src="/images/laptop/first.svg"
-            width={100}
-            height={100}
-            alt="logo"
-            className="laptop__first-inner1"
-          ></Image>
-        </div>
-        <div className="laptop__second">
-          <button className="laptop__second-button">See Our Beta Platform</button>
-          <Image
-            src="/images/laptop/2.svg"
-            width={100}
-            height={100}
-            alt="logo"
-            className="laptop__second-image"
-          ></Image>
-          <Image
-            src="/images/laptop/second.svg"
-            width={100}
-            height={100}
-            alt="logo"
-            className="laptop__second-inner"
-          ></Image>
-        </div>
-      </div>
+     
       <div className="case">
         <h2 className="case__header">Our Featured Case Studies</h2>
         <h3 className="case__description">
@@ -108,10 +76,10 @@ export default function Home() {
               Quantum Congestion-Focused Traffic Optimization (Q-CFTO)
             </h2>
             <h3 className="case__first-body-subheader">
-              Building on Volkswagen and D-Wave's 2017 work, our Quantum
+              Building on Volkswagen and D-Wave&apos;s 2017 work, our Quantum
               Congestion-Focused Traffic Optimization (Q-CFTO) breaks down large
               traffic optimization problems into manageable subproblems. Using
-              D-Wave's Advantage Quantum Processing Unit with "Pegasus"
+              D-Wave&apos;s Advantage Quantum Processing Unit with &apos;Pegasus&apos;
               topology, we achieved faster, more effective traffic flow
               optimization.
             </h3>
@@ -122,7 +90,7 @@ export default function Home() {
             <h2 className="case__first-body-header">
             Passenger Drone Infrastructure Optimization (PDI-OP)
             </h2>
-            <h3 className="case__first-body-subheader">This case study addresses the optimization of urban passenger drone infrastructure. It focuses on the Passenger Drone Infrastructure Optimization Problem (PDI-OP), an NP-hard Facility Location Problem. Utilizing Quantum Annealing (QA), we achieved superior performance in determining spatial requirements for landing pads, vertiports, and vertistops. Our results demonstrate QA's potential to enhance urban mobility with optimized infrastructure deployment, despite challenges related to scalability and regulatory integration.
+            <h3 className="case__first-body-subheader">This case study addresses the optimization of urban passenger drone infrastructure. It focuses on the Passenger Drone Infrastructure Optimization Problem (PDI-OP), an NP-hard Facility Location Problem. Utilizing Quantum Annealing (QA), we achieved superior performance in determining spatial requirements for landing pads, vertiports, and vertistops. Our results demonstrate QA&apos;s potential to enhance urban mobility with optimized infrastructure deployment, despite challenges related to scalability and regulatory integration.
             </h3>
           </div>
           <Image
@@ -146,7 +114,7 @@ export default function Home() {
             Quantum Annealing for Robotics Inspection
             </h2>
             <h3 className="case__first-body-subheader">
-            This case study explores the integration of quantum annealing into robotics for inspecting electrical transmission lines. By transforming differential equations governing robot dynamics into Ising model Hamiltonians, we leveraged D-Wave's Advantage quantum annealer. Our results demonstrate enhanced computational efficiency and the viability of quantum annealing in solving complex robotics problems, paving the way for advanced applications in safe and efficient inspections.
+            This case study explores the integration of quantum annealing into robotics for inspecting electrical transmission lines. By transforming differential equations governing robot dynamics into Ising model Hamiltonians, we leveraged D-Wave&apos;s Advantage quantum annealer. Our results demonstrate enhanced computational efficiency and the viability of quantum annealing in solving complex robotics problems, paving the way for advanced applications in safe and efficient inspections.
             </h3>
           </div>
         </div>
@@ -165,6 +133,42 @@ export default function Home() {
             height={100}
             alt="logo"
             className="case__first-image"
+          ></Image>
+        </div>
+      </div>
+      <div className="laptop">
+        <div className="laptop__first">
+          <button className="laptop__first-button">Coming Soon...</button>
+          <Image
+            src="/images/laptop/1.svg"
+            width={100}
+            height={100}
+            alt="logo"
+            className="laptop__first-image"
+          ></Image>
+          <Image
+            src="/images/laptop/first.svg"
+            width={100}
+            height={100}
+            alt="logo"
+            className="laptop__first-inner1"
+          ></Image>
+        </div>
+        <div className="laptop__second">
+          <Link href={"/qfss"} className="laptop__second-button">See Our Beta Platform</Link>
+          <Image
+            src="/images/laptop/2.svg"
+            width={100}
+            height={100}
+            alt="logo"
+            className="laptop__second-image"
+          ></Image>
+          <Image
+            src="/images/laptop/second.svg"
+            width={100}
+            height={100}
+            alt="logo"
+            className="laptop__second-inner"
           ></Image>
         </div>
       </div>

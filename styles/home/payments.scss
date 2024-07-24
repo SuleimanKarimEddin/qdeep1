@@ -1,0 +1,40 @@
+.payments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 200px;
+    gap: 50px;
+    margin-top: 70px;
+
+    &__cart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        max-width: 20%;
+        gap: 60px;
+        flex: 30%;
+        background-color: #1e1d1d;
+        border-radius: 20px;
+        padding: 40px;
+        & p{
+            color: #b3b3b3;
+        }
+        & button{
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+            width: 150px;
+            height: 40px;
+            border-radius: 30px;
+            color: white;
+            font-weight: bold;
+            &:hover {
+                cursor: pointer;
+                background-color: #b3b3b3;
+                color: black;
+              }
+        }
+    }
+}
