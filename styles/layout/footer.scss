@@ -12,15 +12,32 @@ align-items: center;
         background-color: #1C1C1C;
         border-radius: 10px;
         padding: 30px;
+        @include xl{
+            padding: 15px;
+            width: 90%;
+        
+        }
         height: 100%;
         width: 70%;
     
         h1{
             color: white;
+            @include xl{
+                font-size: 1.1rem;
+              }
+              @include md{
+                font-size: 0.8rem;
+              }
         }
         h3{
             color: #B3B3B3;
             font-size: small;
+            @include xl{
+                font-size: 0.8rem;
+              }
+              @include md{
+                font-size: 0.5rem;
+              }
         }
       
     
@@ -43,6 +60,14 @@ align-items: center;
             color: var(--primary);
             border-radius: 30px;
             margin-top: 10px;
+            @include xl{
+                font-size: 0.8rem;
+                max-width: 100px;
+              }
+              @include md{
+                font-size: 0.6rem;
+                max-width: 80px;
+              }
         }
     }
     &__first-image{
@@ -51,6 +76,7 @@ align-items: center;
         position: absolute;
         top: 0;  
         left: 0;      
+
     }
 
 
@@ -58,6 +84,10 @@ align-items: center;
     &__second{
         width: 100%;
         margin-top: 180px;
+        @include xl{
+            margin-top: 100px;}
+          @include md{
+            margin-top: 50px;}
         display: flex;
         flex-direction: column;
         justify-content: center ;
@@ -79,6 +109,12 @@ align-items: center;
         height: 100%;
         width: 30%;
         margin-top: 80px;
+        @include xl{
+            width: 50%;
+          }
+          @include md{
+            width: 60%;
+          }
     }
     &__link{
         color: #E4E4E7;
@@ -105,6 +141,14 @@ align-items: center;
             width: 20px;
             height: 20px;
         }
+        @include xl{
+            width: 100%;
+            font-size: 0.8rem;
+
+          }
+          @include md{
+            font-size: 0.6rem;
+          }
     }
     &__info-part{
         display: flex;
@@ -130,6 +174,12 @@ align-items: center;
             width: 35px;
             height: 35px;
         }
+        @include xl{
+            font-size: 0.8rem;
+          }
+          @include md{
+            font-size: 0.6rem;
+          }
     }
 
 }

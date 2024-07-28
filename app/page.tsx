@@ -3,6 +3,7 @@ import NewsHolder from "@/componenets/news/NewsHolder";
 import Trusted from "@/componenets/trusted/Trusted";
 import Image from "next/image";
 import React from "react";
+import {caseStudies} from "@/db/caseStudy.json";
 export default function Home() {
   return (
     <>
@@ -95,9 +96,10 @@ export default function Home() {
           future for individuals and businesses while maintaining a strong
           commitment to customer satisfaction and community development
         </h3>
-        <div className="case__first">
+        {caseStudies.map((item, idx) => (
+          <div key={idx} className={`case__first case__first-${idx%2}`}>
           <Image
-            src="/images/case/1.svg"
+            src={`/images/case/${item.image}`}
             width={100}
             height={100}
             alt="logo"
@@ -105,68 +107,15 @@ export default function Home() {
           ></Image>
           <div className="case__first-body">
             <h2 className="case__first-body-header">
-              Quantum Congestion-Focused Traffic Optimization (Q-CFTO)
+              {item.title}
             </h2>
             <h3 className="case__first-body-subheader">
-              Building on Volkswagen and D-Wave's 2017 work, our Quantum
-              Congestion-Focused Traffic Optimization (Q-CFTO) breaks down large
-              traffic optimization problems into manageable subproblems. Using
-              D-Wave's Advantage Quantum Processing Unit with "Pegasus"
-              topology, we achieved faster, more effective traffic flow
-              optimization.
+              {item.body}
             </h3>
           </div>
         </div>
-        <div className="case__first">
-          <div className="case__first-body">
-            <h2 className="case__first-body-header">
-            Passenger Drone Infrastructure Optimization (PDI-OP)
-            </h2>
-            <h3 className="case__first-body-subheader">This case study addresses the optimization of urban passenger drone infrastructure. It focuses on the Passenger Drone Infrastructure Optimization Problem (PDI-OP), an NP-hard Facility Location Problem. Utilizing Quantum Annealing (QA), we achieved superior performance in determining spatial requirements for landing pads, vertiports, and vertistops. Our results demonstrate QA's potential to enhance urban mobility with optimized infrastructure deployment, despite challenges related to scalability and regulatory integration.
-            </h3>
-          </div>
-          <Image
-            src="/images/case/2.svg"
-            width={100}
-            height={100}
-            alt="logo"
-            className="case__first-image"
-          ></Image>
-        </div>
-        <div className="case__first">
-          <Image
-            src="/images/case/3.svg"
-            width={100}
-            height={100}
-            alt="logo"
-            className="case__first-image"
-          ></Image>
-          <div className="case__first-body">
-            <h2 className="case__first-body-header">
-            Quantum Annealing for Robotics Inspection
-            </h2>
-            <h3 className="case__first-body-subheader">
-            This case study explores the integration of quantum annealing into robotics for inspecting electrical transmission lines. By transforming differential equations governing robot dynamics into Ising model Hamiltonians, we leveraged D-Wave's Advantage quantum annealer. Our results demonstrate enhanced computational efficiency and the viability of quantum annealing in solving complex robotics problems, paving the way for advanced applications in safe and efficient inspections.
-            </h3>
-          </div>
-        </div>
-        <div className="case__first">
-          <div className="case__first-body">
-            <h2 className="case__first-body-header">
-            Quantum Annealing for Molecular Docking
-            </h2>
-            <h3 className="case__first-body-subheader">
-            This case study focuses on the molecular unfolding (MU) phase of molecular docking, crucial in drug discovery. We formulated MU as a high-order unconstrained binary optimization problem, aiming to maximize the internal distances between atoms within a molecule. Our approach demonstrated superior performance compared to classical solvers, showcasing the potential of quantum annealing in enhancing the efficiency of molecular docking processes.
-            </h3>
-          </div>
-          <Image
-            src="/images/case/4.svg"
-            width={100}
-            height={100}
-            alt="logo"
-            className="case__first-image"
-          ></Image>
-        </div>
+        ))}
+        
       </div>
       <div className="news">
         <h2 className="news__header">News</h2>

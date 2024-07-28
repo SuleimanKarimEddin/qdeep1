@@ -1,0 +1,191 @@
+.caseStudy{
+   padding-inline: 60px;
+   overflow-x: hidden;
+
+    @include xl{
+        padding-inline: 10px;
+    }
+
+    &-holder{
+        display: flex;
+        border: 1px solid #262626;
+        background-color: #1C1C1C;
+        border-radius: 40px;
+        padding: 30px;
+        justify-content: center;
+        position: relative;
+        gap: 30px;
+        padding-top: 150px;
+
+
+    }
+    &-body{
+        display: flex;
+        background-color: #1C1C1C;
+        border-radius: 40px;
+        z-index: 100;
+        flex-wrap: wrap;
+        gap: 30px;
+        flex: 1;
+        position: relative;
+        @include md{
+            justify-content: center;
+        }
+    }
+    &__filter{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #262626;
+        background-color: #1C1C1C;
+        color: white;
+        border-radius: 40px;
+        align-items: center;
+        padding: 20px;
+       padding-bottom: 100px;
+       height: fit-content;
+       @include md{
+        display: none;
+       }
+        &-title{
+            font-size: 1.1rem;
+            text-align: center;
+            @include xl{
+                font-size: 1rem;
+            }
+            @include md{
+                font-size: 0.8rem;
+            }
+        }
+        &-body{
+            display: flex;
+            width: 100%;
+            max-width: 250px;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;  
+            @include xl{
+                max-width: 150px;
+            }
+        }
+        &-item{
+            background-color: #2C2C2C;
+            padding: 7px;
+            border-radius: 5px;
+            @include xl{
+                font-size: 0.8rem;
+            }
+            @include md{
+                font-size: 0.7rem;
+            }
+
+            & span{
+                color: #7E7E7E;
+                cursor: pointer;
+                margin-left: 2px;
+                margin-bottom: 2px;
+            }
+
+        }
+        &-pub{
+         
+            margin-top: 20px;
+            text-align: start;
+            display:flex;
+            width: 100%;
+            align-items: start;
+            gap:10px;
+            
+        }
+    }
+}
+.checkbox{
+    color: white;
+    font-size:1.2rem;
+    @include xl{
+        font-size: 1rem;
+    }
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: red;
+    border-color: red;
+    &:hover{
+        border-color: red;
+        background-color: red;
+
+    }
+
+  }
+
+.study{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid #262626;
+    background-color: #1C1C1C;
+    color: white;
+    width: 30%;
+    border-radius: 40px;
+    align-items: center;
+    padding: 10px;
+    max-width: 300px;
+    width: 100%;
+    
+   &__title{
+       font-size: 1.1rem;
+       text-align: center;
+       @include xl{
+        font-size: 1rem;
+    }
+    @include md{
+        font-size: 0.8rem;
+    }
+   }
+
+
+    & img{
+        
+        width: 95%;
+        height: 95%;
+    }
+
+}
+
+
+.search2{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50px;
+    background-color: #262626;
+    border: 1px solid #6b6767 ;
+    height: 40px;
+    margin-bottom: 50px;
+    position:absolute;
+    z-index: 1000;
+    top: -70px;
+    left: 10px;
+    &::placeholder{
+      color: #827878;
+    }
+    }
+  
+.drawer{
+    background-color: var(--secondary);
+    display: none;
+    @include md{
+        display: block;
+    }
+}
+.drawer2{
+    color: #fff;
+}
+.ant-drawer-body {
+    background-color: var(--primary);
+  }
+  .ant-drawer-header {
+    background-color: var(--primary);
+    border-radius: 0;
+  }
+  
+  .ant-drawer-title {
+    color: #fff;
+  }

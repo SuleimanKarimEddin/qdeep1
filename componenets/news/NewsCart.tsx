@@ -8,17 +8,17 @@ function getDirectImageUrl(url: string): string {
   }
   return url;
 }
-export default function NewsCart({ body, date, location, titile, url }: INews) {
+export default function NewsCart({ body, date, location, title, url }: INews) {
   return (
     <div className="news__cart">
       <Image
         className="news__image"
-        src={getDirectImageUrl(url)}
+        src={`/images/news/${url}`}
         width={100}
         height={100}
         alt="logo"
       ></Image>
-      <h3>{titile}</h3>
+      <h3>{title}</h3>
       <div className="news__date">
         {" "}
         <p>Location: {location}</p> <p>Date: {date}</p>

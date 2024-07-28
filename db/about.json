@@ -1,0 +1,45 @@
+{
+  "visions": [
+    {
+      "id": 1,
+      "image": "1.svg",
+      "title": "Mission",
+      "body": "At QDeep, we're dedicated to advancing the frontiers of quantum computing, shaping tomorrow's technology through groundbreaking research and innovation. We prioritize fostering international collaboration and promoting diversity to ensure that talent from all backgrounds can contribute to our transformative projects."
+    },
+    {
+      "id": 2,
+      "image": "2.svg",
+      "title": "Vision",
+      "body": "QDeep envisions a future where quantum computing transforms industries, solves complex problems, and accelerates scientific discovery. By pushing the boundaries of what's possible in quantum technology, we strive to play a pivotal role in realizing this vision and achieving quantum advantage."
+    }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "image": "Hadi.svg",
+      "name": "Hadi Salloum",
+      "role": "CEO and Founder",
+      "description": "Hadi Salloum is currently a researcher at Innopolis University. His research centers on two main aspects. First, he is dedicated to enhancing computer software applications using the potential of quantum computing and its synergy. Second, he explores the ",
+      "linkedin": "https://www.linkedin.com/in/amit-kumar-6a514b1b4/",
+      "research": "https://www.researchgate.net/profile/Amit-Kumar-2"
+    },
+    {
+      "id": 2,
+      "image": "Anas.svg",
+      "name": "Amit Kumar",
+      "role": "CBO and Co-Founder",
+      "description": "Hadi Salloum is currently a researcher at Innopolis University. His research centers on two main aspects. First, he is dedicated to enhancing computer software applications using the potential of quantum computing and its synergy. Second, he explores the ",
+      "linkedin": "https://www.linkedin.com/in/amit-kumar-6a514b1b4/",
+      "research": "https://www.researchgate.net/profile/Amit-Kumar-2"
+    },
+    {
+      "id": 3,
+      "image": "Murhaf.svg",
+      "name": "Murhaf Alawir",
+      "role": "CTO and Co-Founder",
+      "description": "Hadi Salloum is currently a researcher at Innopolis University. His research centers on two main aspects. First, he is dedicated to enhancing computer software applications using the potential of quantum computing and its synergy. Second, he explores the ",
+      "linkedin": "https://www.linkedin.com/in/amit-kumar-6a514b1b4/",
+      "research": "https://www.researchgate.net/profile/Amit-Kumar-2"
+    }
+  ]
+}

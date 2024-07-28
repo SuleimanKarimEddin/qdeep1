@@ -2,13 +2,20 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    overflow-x: hidden;
    &__logo{
        color: white;
        font-size: 2rem;
         margin-top: 40px;
-        @include Glitch
-
-
+        width: 90px;
+        height: 90px;
+        @include Glitch;
+        @include xl{
+            font-size: 1rem;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 200px;
+          }
    }
    &__menu{
        display: flex;
@@ -21,8 +28,24 @@
        border-radius: 100px;
        padding-block: 10px;
        margin-left: 10px;
-
        font-size: small;
+       @include xxl{
+        font-size: x-small;
+       }
+       @include xl{
+        padding-inline: 14%;
+        padding-block: 8px;
+        margin-left: 5px;
+        font-size: x-small;
+        gap: 1.5rem;
+       }
+       @include md{
+        padding-inline: 2%;
+        gap: 1rem;
+        padding-block: 6px;
+        margin-left: 5px;
+        font-size: xx-small;
+       }
       .menuLink{
         color: aliceblue;
         text-decoration: none;
@@ -40,6 +63,8 @@
     max-width: 350px;
         height: 319px;
         width:181px;
-        // margin-right: 90px;
+        @include xl{
+            display: none;
+        }
    }
 }

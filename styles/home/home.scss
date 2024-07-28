@@ -1,5 +1,7 @@
 .home {
   height: 70vh;
+  overflow-x: hidden;
+
   scroll-snap-type: y mandatory;
   &__header {
     position: absolute;
@@ -7,6 +9,9 @@
     height: 500px;
     width: 181px;
     right: 50px;
+    @include xl{
+      display: none;
+    }
   }
   &__footer {
     width: 794.15px;
@@ -14,6 +19,9 @@
     position: absolute;
     bottom: -100px;
     left: 20px;
+    @include xl{
+      display: none;
+    }
   }
 }
 .home-page {
@@ -22,12 +30,49 @@
   text-align: right;
   margin-top: 18px;
   margin-right: 63px;
+  @include xl{
+    font-size: x-large;
+    text-align: center;
+    margin-right: 0;
+  }
+  @include md{
+    font-size: medium;
+    text-align: justify;
+  }
   .word {
     color: var(--secondary);
+    
   }
   .word-half {
     margin-top: 20px;
     padding-right: 140px;
+   
+  }
+}
+.home-page2 {
+  overflow-x: hidden;
+  scroll-snap-align: end;
+  color: white;
+  text-align: center;
+  padding-inline: 20px;
+  margin-top: 18px;
+  margin-right: 63px;
+  @include xl{
+    font-size: x-large;
+    text-align: center;
+    margin-right: 0;
+  }
+  @include md{
+    font-size: medium;
+  }
+  .word {
+    color: var(--secondary);
+    
+  }
+  .word-half {
+    margin-top: 20px;
+    padding-right: 140px;
+   
   }
 }
 
@@ -40,13 +85,26 @@
     position: absolute;
     top: -50px;
     left: 0;
+    @include xl{
+      display: none;
+    }
   }
 
   padding: 50px;
-  height: 80vh;
+  @include xl{
+    padding: 10px;
+  }
+  // height: 80vh;
   .header {
     margin-top: 150px;
     font-size: 3rem;
+    @include xl{
+      font-size: 2rem;
+      margin-top: 0px;
+    }
+    @include md{
+      font-size: 1.5rem;
+    }
     color: var(--secondary);
     .word {
       color: white;
@@ -54,17 +112,29 @@
   }
   .header2 {
     font-size: 3rem;
+    @include xl{
+      margin-top: 100px;
+      font-size: 2rem;
+    }
+    @include md{
+      font-size: 1.5rem;
+    }
     color: white;
     .word2 {
       color: var(--secondary);
     }
   }
+
   &__holder {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 100px;
     gap: 30px;
+    @include xl{
+      flex-direction: column;
+      margin-top:40px;
+    }
   }
 
   &__cart {
@@ -76,22 +146,49 @@
     text-align: center;
     max-width: 600px;
     gap: 20px;
+
+    @include xl{
+      max-width: 550px;
+      margin-top: 100px;
+    }
+    @include md{
+      max-width: 350px;
+    }
   }
   &__cart-image {
     width: 178.66px;
     height: 164px;
-    gap: 0px;
-    opacity: 0px;
+    @include xl{
+      width: 100px;
+      height: 100px;
+      
+    }
+    @include md{
+      width: 80px;
+      height: 80px;
+    }
+   
   }
 
   &__cart-image2 {
     width: 100px;
     height: 100px;
-    gap: 0px;
-    opacity: 0px;
+    @include xl{
+      width: 80px;
+      height: 80px;
+    }
+    @include md{
+      width: 60px;
+      height: 60px;}
   }
   &__title {
     font-size: 2rem;
+    @include xl{
+      font-size: 1.7rem;
+    }
+    @include md{
+      font-size: 1.5rem;
+    }
   }
   &__description {
     color: #b3b3b3;
@@ -105,6 +202,10 @@
     height: 340px;
     width: 1px;
     background-color: #262626;
+    @include xl{
+    display: none;
+    }
+   
   }
 
   // platform
@@ -113,11 +214,21 @@
   }
 }
 
+
+
 .laptop {
   width: 100%;
   height: 160vh;
   overflow-y: hidden;
   overflow-x: hidden;
+  @include xl{
+    margin-top: 100px;
+    height: 140vh;
+  }
+  @include md{
+    height: 90vh;
+  }
+ 
   &__first {
     height: 80vh;
     display: flex;
@@ -125,6 +236,13 @@
     align-items: center;
     width: 100%;
     position: relative;
+ 
+      
+
+  
+    @include md{
+      height: 50vh;
+    }
     &-button {
       z-index: 10;
       position: absolute;
@@ -135,6 +253,18 @@
       border: none;
       color: black;
       border-radius: 30px;
+
+      @include xl{
+        width: 140px;
+        height: 50px;
+        font-size: 1rem;
+      }
+      @include md{
+        width: 130px;
+        height: 40px;
+        font-size: 0.8rem;
+        top: 40%;
+      }
       &:hover {
         cursor: pointer;
       }
@@ -147,6 +277,14 @@
     right: -150px;
     top: 0;
     z-index: 0;
+    @include xl{
+      width: 1000px;
+      height: 500px;
+    }
+    @include md{
+      width: 600px;
+      height: 300px;
+    }
   }
   &__first-inner1 {
     position: absolute;
@@ -158,6 +296,19 @@
     z-index: 1;
     // @include height-expand(430px, 3s); 
     @include height-and-position-expand(430px, 76px, 2s);
+
+    @include xl{
+      right: -40px;
+      width: 500px;
+      height: 0;
+      @include height-and-position-expand(320px, 53px, 2s);
+    }
+    @include md{
+      width: 290px;
+      height: 0;
+      right: -77px;
+      @include height-and-position-expand(320px, -34px, 2s);
+    }
    }
 
   &__second {
@@ -168,6 +319,16 @@
     height: 100%;
     width: 100%;
     position: relative;
+    @include xl{
+      width: 1000px;
+      height: 500px;
+      height: 60vh;
+    }
+    @include md{
+      width: 600px;
+      height: 300px;
+      height: 50vh;
+    }
     &-button {
       z-index: 10;
       position: absolute;
@@ -179,6 +340,21 @@
       border: none;
       color: black;
       border-radius: 30px;
+
+      @include xl{
+        width: 140px;
+        height: 50px;
+        font-size: 1rem;
+        top: 53%;
+        right: 25%;
+      }
+      @include md{
+        width: 130px;
+        height: 40px;
+        font-size: 0.8rem;
+        top: 43%;
+        right: 20%;
+      }
       &:hover {
         cursor: pointer;
       }
@@ -190,6 +366,14 @@
       left: -150px;
       top: 0;
       z-index: 0;
+      @include xl{
+        width: 1000px;
+        height: 500px;
+      }
+      @include md{
+        width: 600px;
+        height: 300px;
+      }
     }
     &-inner {
       position: absolute;
@@ -199,30 +383,88 @@
       top: 76px;
       z-index: 1;
       @include fade-in(3s);
+
+      @include xl{
+        left: -30px;
+        top: 40px;
+        width: 500px;
+        height: 320px;
+      }
+      @include md{
+        top: -33px;
+        width: 290px;
+        height: 320px;
+        left: -70px;
+      }
     }
   }
 }
 .case {
   margin-top: 140px;
   padding: 50px;
+  @include xl{
+    padding: 0px;
+    margin-top: 70px;
+  }
+
   &__header {
     font-size: 2rem;
     color: var(--secondary);
+    @include xl{
+      font-size: 1.4rem;
+    }
+    @include md{
+      font-size: 1rem;
+    }
   }
   &__description {
     color: #b3b3b3;
     width: 90%;
-    margin-bottom: 280px;
+    margin-bottom: 170px;
+    @include xl{
+      font-size: 1rem;
+      margin-bottom: 50px;
+    }
+    @include md{
+      font-size: 0.8rem;
+    }
   }
+
   &__first {
     margin-top: -150px;
     display: flex;
     gap: 70px;
 
+    &-1{
+      flex-direction: row-reverse;
+    }
+    @include xxl{
+      margin-top: -40px;
+      gap: 20px;
+    }
+    @include xl{
+      margin-top: 0px;
+      // flex-direction: column;
+    }
+    @include md{
+    }
+
     &-image {
       width: 600px;
       height: 600px;
       border-radius: 5%;
+      @include xxl{
+        width: 400px;
+        height: 400px;
+      }
+      @include xl{
+        width: 300px;
+        height: 300px;
+      }
+      @include md{
+        width: 180px;
+        height: 180px;
+      }
     }
     &-body {
       display: flex;
@@ -232,9 +474,23 @@
       width: 50%;
       & h2{
         font-size: 2.2rem;
+        @include xl{
+          margin-top: 50px;
+          font-size: 1.4rem;
+        }
+        @include md{
+          font-size: 1rem;
+        }
       }
       & h3{
         font-size: small;
+        @include xl{
+          font-size:x-small;
+        }
+        @include md{
+          font-size: xx-small;
+        }
+        
       }
     }
   }
@@ -244,12 +500,28 @@
   margin-top: 100px;
 
   padding: 50px;
+  @include xl{
+    padding: 0px;
+    margin-top: 70px;
+  }
   &__header {
     color: var(--secondary);
     font-size: 2rem;
+    @include xl{
+      font-size: 1.4rem;
+    }
+    @include md{
+      font-size: 1rem;
+    }
   }
   &__description {
     color: #b3b3b3;
+    @include xl{
+      font-size: 1rem;
+    }
+    @include md{
+      font-size: 0.8rem;
+    }
   }
   &__holder {
     display: flex;
@@ -258,6 +530,9 @@
     margin-top: 60px;
     gap: 30px;
     flex-wrap: wrap;
+    @include xl{
+      justify-content: center;
+    }
   }
   &__cart {
     display: flex;
@@ -272,6 +547,11 @@
     background-color: #1e1d1d;
     padding: 15px;
     border-radius: 5%;
+    @include xl{
+      max-width: 500px;
+    }
+    @include md{
+      max-width: 400px;}
   }
   &__date {
     display: flex;
@@ -287,6 +567,13 @@
   &__image {
     width: 450px;
     height: 330px;
+    @include xl{
+      width: 330px;
+      height: 220px;}
+    @include md{
+      width: 280px;
+      height: 190px;
+    }
     border-radius: 5%;
   }
   &__body {

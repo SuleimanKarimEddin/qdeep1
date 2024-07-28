@@ -8,17 +8,23 @@ const links = [
     link: "/",
   },
   {
-    name: "Careers",
-    link: "/careers",
+    name: "Case Studies",
+    link: "/case",
   },
+  {
+    name: "News",
+    link: "/news",
+  },
+  
   {
     name: "About",
     link: "/about",
   },
   {
-    name: "Security",
-    link: "/security",
+    name: "Contact Us",
+    link: "/contact",
   },
+ 
 ];
 export default function HeaderLinks() {
   const params = usePathname();

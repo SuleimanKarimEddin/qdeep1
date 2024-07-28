@@ -1,0 +1,49 @@
+{"caseStudies":[
+    {
+        "id": 1,
+        "image" : "1.svg",
+        "title": "Quantum Congestion-Focused Traffic Optimization (Q-CFTO)",
+        "body": "Building on Volkswagen and D-Wave's 2017 work, our Quantum Congestion-Focused Traffic Optimization (Q-CFTO) breaks down large traffic optimization problems into manageable subproblems. Using D-Wave's Advantage Quantum Processing Unit with 'Pegasus' topology, we achieved faster, more effective traffic flow optimization.",
+        "pdf":"test.pdf",
+        "Published":true,
+    "tags": ["Quantum", "Product", "Something", "Design system"]
+    },
+    {
+        "id": 2,
+        "image" : "2.svg",
+        "title": "Passenger Drone Infrastructure Optimization (PDI-OP)",
+        "body": "This case study addresses the optimization of urban passenger drone infrastructure. It focuses on the Passenger Drone Infrastructure Optimization Problem (PDI-OP), an NP-hard Facility Location Problem. Utilizing Quantum Annealing (QA), we achieved superior performance in determining spatial requirements for landing pads, vertiports, and vertistops. Our results demonstrate QA's potential to enhance urban mobility with optimized infrastructure deployment, despite challenges related to scalability and regulatory integration.",
+                "pdf":"test.pdf",
+                "Published":true,
+                "tags": [ "Product", "Something", "Design system"]
+
+    },
+        
+    {
+        "id": 3,
+        "image" : "3.svg",
+        "title": " Quantum Annealing for Robotics Inspection",
+        "body": "This case study explores the integration of quantum annealing into robotics for inspecting electrical transmission lines. By transforming differential equations governing robot dynamics into Ising model Hamiltonians, we leveraged D-Wave's Advantage quantum annealer. Our results demonstrate enhanced computational efficiency and the viability of quantum annealing in solving complex robotics problems, paving the way for advanced applications in safe and efficient inspections.",
+        "pdf":"test.pdf",
+        "Published":false,
+        "tags": ["Quantum", "Product"]
+
+        },
+    {
+        "id": 4,
+        "image" : "4.svg",
+        "title": "Quantum Annealing for Molecular Docking",
+        "body":"This case study focuses on the molecular unfolding (MU) phase of molecular docking, crucial in drug discovery. We formulated MU as a high-order unconstrained binary optimization problem, aiming to maximize the internal distances between atoms within a molecule. Our approach demonstrated superior performance compared to classical solvers, showcasing the potential of quantum annealing in enhancing the efficiency of molecular docking processes.",
+        "pdf":"test.pdf",
+        "Published":false,
+        "tags": ["Quantum", "Design system"]
+
+    }
+],
+"tags": [
+    "Quantum",
+    "Product",
+    "Something",
+    "Design system"
+]
+}

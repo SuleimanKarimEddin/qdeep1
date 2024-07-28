@@ -1,6 +1,6 @@
 interface INews{
-    id:string;
-    titile: string;
+    id: number;
+    title: string;
     body: string;
     url: string;
     location: string;

@@ -16,27 +16,26 @@ $medium-breakpoint: 43.75em;
 $large-breakpoint: 56.25em;
 $xlarge-breakpoint: 75em;
 $xxlarge-breakpoint: 90em;
-
 @mixin md{
-    @media (min-width: $medium-breakpoint){
+    @media (max-width: $medium-breakpoint){
         @content;
     }
 } 
 
 @mixin lg{
-    @media (min-width: $large-breakpoint){
+    @media (max-width: $large-breakpoint){
         @content;
     }
 }
 
 @mixin xl{
-    @media (min-width: $xlarge-breakpoint){
+    @media (max-width: $xlarge-breakpoint){
         @content;
     }
 }
 
 @mixin xxl{
-    @media (min-width: $xxlarge-breakpoint){
+    @media (max-width: $xxlarge-breakpoint){
         @content;
     }
 }
